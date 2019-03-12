@@ -1,10 +1,4 @@
-//
-//  SortCollectionView.h
-//  cell拖动添加删除
-//
-//  Created by Beepay001 on 2019/3/12.
-//  Copyright © 2019 weiguang. All rights reserved.
-//
+
 
 #import <UIKit/UIKit.h>
 

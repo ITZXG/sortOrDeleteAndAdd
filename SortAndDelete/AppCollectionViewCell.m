@@ -1,10 +1,4 @@
-//
-//  AppCollectionViewCell.m
-//  cell拖动添加删除
-//
-//  Created by weiguang on 2017/5/24.
-//  Copyright © 2017年 weiguang. All rights reserved.
-//
+
 
 #import "AppCollectionViewCell.h"
 
@@ -56,7 +50,7 @@
 }
 
 
-- (void)showInfoWithModel:(dataModel *)model {
+- (void)showInfoWithModel:(DataModel *)model {
     
     _nameLabel.text = model.appName;
     _appImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",model.imageName]];

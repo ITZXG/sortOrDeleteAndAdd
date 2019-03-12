@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6BF6E93F22378CA5004647E8 /* SortCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF6E93E22378CA5004647E8 /* SortCollectionView.m */; };
-		D130617D1ED672FC009F4BF1 /* dataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D130617C1ED672FC009F4BF1 /* dataModel.m */; };
+		D130617D1ED672FC009F4BF1 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D130617C1ED672FC009F4BF1 /* DataModel.m */; };
 		D180353C1ED55B6200DDBBFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D180353B1ED55B6200DDBBFE /* main.m */; };
 		D180353F1ED55B6200DDBBFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D180353E1ED55B6200DDBBFE /* AppDelegate.m */; };
 		D18035421ED55B6200DDBBFE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D18035411ED55B6200DDBBFE /* ViewController.m */; };
@@ -21,9 +21,9 @@
 /* Begin PBXFileReference section */
 		6BF6E93D22378CA5004647E8 /* SortCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortCollectionView.h; sourceTree = "<group>"; };
 		6BF6E93E22378CA5004647E8 /* SortCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortCollectionView.m; sourceTree = "<group>"; };
-		D130617B1ED672FC009F4BF1 /* dataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataModel.h; sourceTree = "<group>"; };
-		D130617C1ED672FC009F4BF1 /* dataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataModel.m; sourceTree = "<group>"; };
-		D18035371ED55B6200DDBBFE /* cell拖动添加删除.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cell拖动添加删除.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D130617B1ED672FC009F4BF1 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		D130617C1ED672FC009F4BF1 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		D18035371ED55B6200DDBBFE /* SortAndDelete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SortAndDelete.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D180353B1ED55B6200DDBBFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D180353D1ED55B6200DDBBFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D180353E1ED55B6200DDBBFE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		D180352E1ED55B6200DDBBFE = {
 			isa = PBXGroup;
 			children = (
-				D18035391ED55B6200DDBBFE /* cell拖动添加删除 */,
+				D18035391ED55B6200DDBBFE /* SortAndDelete */,
 				D18035381ED55B6200DDBBFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,12 +59,12 @@
 		D18035381ED55B6200DDBBFE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D18035371ED55B6200DDBBFE /* cell拖动添加删除.app */,
+				D18035371ED55B6200DDBBFE /* SortAndDelete.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D18035391ED55B6200DDBBFE /* cell拖动添加删除 */ = {
+		D18035391ED55B6200DDBBFE /* SortAndDelete */ = {
 			isa = PBXGroup;
 			children = (
 				D180353D1ED55B6200DDBBFE /* AppDelegate.h */,
@@ -73,8 +73,8 @@
 				D18035411ED55B6200DDBBFE /* ViewController.m */,
 				D18035541ED5809400DDBBFE /* AppCollectionViewCell.h */,
 				D18035551ED5809400DDBBFE /* AppCollectionViewCell.m */,
-				D130617B1ED672FC009F4BF1 /* dataModel.h */,
-				D130617C1ED672FC009F4BF1 /* dataModel.m */,
+				D130617B1ED672FC009F4BF1 /* DataModel.h */,
+				D130617C1ED672FC009F4BF1 /* DataModel.m */,
 				D18035431ED55B6200DDBBFE /* Main.storyboard */,
 				D18035461ED55B6200DDBBFE /* Assets.xcassets */,
 				D18035481ED55B6200DDBBFE /* LaunchScreen.storyboard */,
@@ -83,7 +83,7 @@
 				6BF6E93D22378CA5004647E8 /* SortCollectionView.h */,
 				6BF6E93E22378CA5004647E8 /* SortCollectionView.m */,
 			);
-			path = "cell拖动添加删除";
+			path = SortAndDelete;
 			sourceTree = "<group>";
 		};
 		D180353A1ED55B6200DDBBFE /* Supporting Files */ = {
@@ -97,9 +97,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D18035361ED55B6200DDBBFE /* cell拖动添加删除 */ = {
+		D18035361ED55B6200DDBBFE /* SortAndDelete */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D180354E1ED55B6200DDBBFE /* Build configuration list for PBXNativeTarget "cell拖动添加删除" */;
+			buildConfigurationList = D180354E1ED55B6200DDBBFE /* Build configuration list for PBXNativeTarget "SortAndDelete" */;
 			buildPhases = (
 				D18035331ED55B6200DDBBFE /* Sources */,
 				D18035341ED55B6200DDBBFE /* Frameworks */,
@@ -109,9 +109,9 @@
 			);
 			dependencies = (
 			);
-			name = "cell拖动添加删除";
+			name = SortAndDelete;
 			productName = "cell拖动添加删除";
-			productReference = D18035371ED55B6200DDBBFE /* cell拖动添加删除.app */;
+			productReference = D18035371ED55B6200DDBBFE /* SortAndDelete.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -130,7 +130,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D18035321ED55B6200DDBBFE /* Build configuration list for PBXProject "cell拖动添加删除" */;
+			buildConfigurationList = D18035321ED55B6200DDBBFE /* Build configuration list for PBXProject "SortAndDelete" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -143,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D18035361ED55B6200DDBBFE /* cell拖动添加删除 */,
+				D18035361ED55B6200DDBBFE /* SortAndDelete */,
 			);
 		};
 /* End PBXProject section */
@@ -167,7 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D18035421ED55B6200DDBBFE /* ViewController.m in Sources */,
-				D130617D1ED672FC009F4BF1 /* dataModel.m in Sources */,
+				D130617D1ED672FC009F4BF1 /* DataModel.m in Sources */,
 				6BF6E93F22378CA5004647E8 /* SortCollectionView.m in Sources */,
 				D18035561ED5809400DDBBFE /* AppCollectionViewCell.m in Sources */,
 				D180353F1ED55B6200DDBBFE /* AppDelegate.m in Sources */,
@@ -290,7 +290,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 33MNLR2PU5;
-				INFOPLIST_FILE = "cell拖动添加删除/Info.plist";
+				INFOPLIST_FILE = SortAndDelete/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "changhong.cell------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,7 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 33MNLR2PU5;
-				INFOPLIST_FILE = "cell拖动添加删除/Info.plist";
+				INFOPLIST_FILE = SortAndDelete/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "changhong.cell------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,7 +312,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D18035321ED55B6200DDBBFE /* Build configuration list for PBXProject "cell拖动添加删除" */ = {
+		D18035321ED55B6200DDBBFE /* Build configuration list for PBXProject "SortAndDelete" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D180354C1ED55B6200DDBBFE /* Debug */,
@@ -321,7 +321,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D180354E1ED55B6200DDBBFE /* Build configuration list for PBXNativeTarget "cell拖动添加删除" */ = {
+		D180354E1ED55B6200DDBBFE /* Build configuration list for PBXNativeTarget "SortAndDelete" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D180354F1ED55B6200DDBBFE /* Debug */,

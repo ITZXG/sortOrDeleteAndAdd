@@ -1,10 +1,4 @@
-//
-//  ViewController.m
-//  cell拖动添加删除
-//
-//  Created by weiguang on 2017/5/24.
-//  Copyright © 2017年 weiguang. All rights reserved.
-//
+
 
 #import "ViewController.h"
 #import "AppCollectionViewCell.h"
@@ -53,7 +47,7 @@ static CGFloat leftMargin = 5;
     
     for (NSDictionary *dict in dataArr) {
         
-        dataModel *model = [dataModel initWithDict:dict];
+        DataModel *model = [DataModel initWithDict:dict];
         [_viewModels addObject:model];
     }
     self.collectionView.viewModels = _viewModels;
@@ -110,7 +104,7 @@ static CGFloat leftMargin = 5;
 // 点击添加按钮，随机添加数据
 - (void)leftItemClick {
     int x = arc4random() % _viewModels.count;
-    dataModel *model = _viewModels[x];
+    DataModel *model = _viewModels[x];
     
     [_viewModels addObject:model];
     self.collectionView.viewModels = _viewModels;

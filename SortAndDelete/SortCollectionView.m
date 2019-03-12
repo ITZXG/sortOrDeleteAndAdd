@@ -1,10 +1,4 @@
-//
-//  SortCollectionView.m
-//  cell拖动添加删除
-//
-//  Created by Beepay001 on 2019/3/12.
-//  Copyright © 2019 weiguang. All rights reserved.
-//
+
 
 #import "SortCollectionView.h"
 #import "AppCollectionViewCell.h"
@@ -275,7 +269,7 @@ static CGFloat leftMargin = 5;
     
     AppCollectionViewCell *cell = (AppCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     
-    dataModel *model = _viewModels[indexPath.item];
+    DataModel *model = _viewModels[indexPath.item];
     [cell showInfoWithModel:model];
     
     [cell.deleteBtn addTarget:self action:@selector(deleteButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
